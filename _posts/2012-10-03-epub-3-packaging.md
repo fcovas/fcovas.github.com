@@ -1,13 +1,24 @@
 ---
 layout: post
 title: "EPUB 3 Packaging"
+tagline: "tag"
 description: ""
 category: 
 tags: []
 ---
 {% include JB/setup %}
 
-I was creating an ebook without using specific tools, I wanted to edit all the files myself to learn a little more about the EPUB file structure. After creating the initial structure I wanted to package it all into one zip file in order to load it on my ebook reader. I came across a series of problems:
+I was creating an ebook without using specific tools, I wanted to edit all the files myself to learn a little more about the EPUB file structure. For reference this is the structure of my work directory:
+    
+    root
+        book
+            mimetype
+            META-INF
+            Content
+        deploy
+            recipes.epub
+
+ After creating the initial structure I wanted to package it all into one zip file in order to load it on my ebook reader. This post is the result of a series of problems I had:
 
 __mimetype file__  
 The *mimetype* file contains the mime type of the compressed epub, in this case *application/epub+zip*. This file needs to be the very first one in the zip package. I'm using the [zip utility](http://amath.colorado.edu/computing/software/man/zip.html) so it's easy to specify the order in wich the files are packaged. 
@@ -38,7 +49,6 @@ My final command used to package the ebook looks like this:
     zip -Xr ../deploy/recipes.epub mimetype META-INF OEBPS -x@../exclude.lst  
 
 __Note__:  
-The structure of the zip file is defined [here](http://idpf.org/epub/30/spec/epub30-ocf.html).  
 You want to validate your epub file you can go [here](http://validator.idpf.org/).  
 
 __References__  
