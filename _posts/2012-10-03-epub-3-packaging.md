@@ -28,7 +28,7 @@ The *mimetype* file contains the mime type of the compressed epub, in this case 
 If you are using some graphical interface applications to generate the zips you need to watch out for this.
 
 __Filenames__  
-I was calling the zip utility like so:
+I was calling the zip utility like this:
 
     zip deploy/recipes.epub book/mimetype book/META-INF book/Content
 
@@ -49,7 +49,7 @@ My final command used to package the ebook looks like this:
     zip -Xr ../deploy/recipes.epub mimetype META-INF OEBPS -x@../exclude.lst  
 
 __Note__:  
-You want to validate your epub file you can go [here](http://validator.idpf.org/).  
+If want to validate your epub file you can go [here](http://validator.idpf.org/).  
 
 __References__  
 <http://idpf.org/epub/30/spec/epub30-ocf.html>
