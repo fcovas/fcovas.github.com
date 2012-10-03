@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-I was creating an ebook without using specific tools, I wanted to edit all the files myself to learn a little more about the EPUB file structure. For reference this is the structure of my work directory:
+I was creating an [ebook](https://github.com/fcovas/recipes.epub) without using specific tools, I wanted to edit all the files myself to learn a little more about the EPUB file structure. For reference this is the structure of my work directory:
     
     root
         book
@@ -43,10 +43,10 @@ When you create the zip all the files in the folders and subfolders will be adde
 
     zip -X recipes.epub . -x@exclude.lst
 
-My final command used to package the ebook looks like this:
+The final command used to package the ebook looks like this:
 
     cd book  
-    zip -Xr ../deploy/recipes.epub mimetype META-INF OEBPS -x@../exclude.lst  
+    zip -Xr ../deploy/recipes.epub mimetype META-INF Content -x@../exclude.lst  
 
 __Note__:  
 If want to validate your epub file you can go [here](http://validator.idpf.org/).  
