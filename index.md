@@ -1,4 +1,4 @@
 ---
-layout: page
+layout: default
 ---
 {% include JB/setup %}
