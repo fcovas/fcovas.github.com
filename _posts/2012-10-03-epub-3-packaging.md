@@ -4,7 +4,7 @@ title: "EPUB 3 Packaging"
 tagline: "tag"
 description: ""
 category: 
-tags: []
+tags: [epub3]
 ---
 {% include JB/setup %}
 
