@@ -3,7 +3,7 @@ layout: post
 title: "EPUB 3 Packaging"
 tagline: "tag"
 description: ""
-category: 
+category: epub
 tags: [epub3]
 ---
 {% include JB/setup %}
