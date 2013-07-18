@@ -51,8 +51,11 @@ The final command used to package the ebook looks like this:
 __Note__:  
 If want to validate your epub file you can go [here](http://validator.idpf.org/).  
 
-__References__  
+__References__ 
+
 <http://idpf.org/epub/30/spec/epub30-ocf.html>
+
 <http://amath.colorado.edu/computing/software/man/unzip.html>
+
 <http://amath.colorado.edu/computing/software/man/zip.html>
 
